@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Tipos de selectores que entran en examen</title>
+ <style>
+ .rojo{color:purple;}
+ *{ background-color: rgb(185, 217, 247);}
+ #verde{color: chartreuse;}
+  p, em, h1, h2 {background-color:rgb(255, 191, 128)}
+  ol li{color: rgb(255, 0, 170);}
+  #ju:hover{background-color: rgb(0, 230, 184);}
+ </style>
+ </head>
+ <body>
+     <h1 id="verde">Tipos de <em>selectores</em> que entran en examen</h1>
+     <p class="rojo">A continuación se van a explicar los siguientes selectores:</p>
+     <ol>
+        <li>Clase (class=””): selector que sirve para cambiar el color de la letra o del fondo de los elementos del texto que se quieran cambiar .Si se puede reptir su nombre . Véase el ejemplo: Vamos a cambiar el color letra a morado </li>
+
+        <li>Identificador (id=””): selector que sirve para cambiar el color de la letra o del fondo  de los elementos del texto que se quieran cambiar . No se puede reptir su nombre. Ejemplo: Vamos a cambiar el color del texto de "h1" a verde.</li>
+
+        <li>Todos los elementos (*): selector general utilizado para cambiar el fondo y el color predeterminados.Ejemplo: Todo el fondo es azul .</li>
+        
+        <li>Varios elementos ( p, em, h1, h2): selector utilizado para cambiar el fondo y el color predeterminados de todo el texto de los elementos que están entre paréntesis. Ejemplo: Vamos a cambiar el fondo a naranja.   </li>
+
+        <li>Elementos contenidos en otros elementos (ol li):lector utilizado para cambiar el fondo y el color predeterminados del texto de los elementos que están dentro de un selector. En este caso sería se cambiarían los "li" de los "ol". Ejmplo:Vamos a cambiar el color de la letra de los "li" a rosa.</li>
+
+        <li>Sobrevuleo (p:hover):selector que cambia el color de la letra o el fondo pasando el ratón, por ejemplo: </li>
+        <p id="ju">Aquí</p>
+        </ol>
+        <p>Aunque puse que solo se puede cambiar el fondo y el color de la letra, también se pueden cambiar muchas cosas como por ejemplo el tipo de letra , su tamaño etc...</p>
+        </body>
+        </html>
+
+

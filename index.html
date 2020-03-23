@@ -1,46 +1,90 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
-         <meta charset="utf-8">
-         <title>Mi trabajo en TICII</title>
-            <style>
-             #m{background-color:rgb(204, 204, 255) ;}
-             #e{background-color: rgb(255, 153, 255);}
-             h1{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        <title>index</title>
+        <meta charset="utf-8">
+        <style>
+
+            *{background-color: rgb(200, 175, 216);font-family:cursive;}
+
+            ol li{color: rgb(20, 99, 31);
+            }
+            ul li, p {background-color:rgb(113, 196, 134);}
+
+            h2{background-color: rgb(97, 118, 241);
+            color: rgb(0, 4, 245);
+            }
+            h1, a{background-color: rgb(252, 221, 119);
+            color: rgb(255, 139, 7);
+            }
+
+            h2:hover{
+          background-color:rgb(245, 153, 203);
+         color: rgb(255, 0, 191);}
+         
+         .boton {
+  background-color: rgb(113, 196, 134);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-style:dashed;
+        border-width:5px;
+        border-color:rgba(20,99, 31,5);
+        border-radius:10%;
+        margin-bottom:4%
         
-            </style>
+    }
+
+        </style>
     </head>
     <body>
-     <div id="m">
-     <h1> Mi trabajo en TICII </h1>
-     <p>Me llamo Ángela Martínez y tengo 17 años. Vivo en Oviedo y actualmente estoy cursando segundo  de bachiller en el IES Dr. Fleming.
-        El deporte junto a la música y el cine son unas de mis aficiones favoritas, pero lo que verdaderamente me encanta es viajar. Me encantría por ir a todos los paises del mundo. Ojalá poder cumplirlo algún día.
-     Respecto a la música mis cantastes favoritos son Ariana Grande , Lana del Rey , Shawn Mendes... y respecto al cine no tengo ninguna preferencia. </p>
-     </div>
-
-     <div id="e">
-     <h2> Ejercicios introducción HTML.</h2>
-     <ul>
-        <li><a href="html-ejerc1-intro.html">Ejercicio 1 </a></li>
-        <li><a href="html-ejerc2-poema.html">Ejercicio 2</a></li>
-        <li><a href="html-ejerc3-enfasis.html">Ejercicio 3</a></li>
-        <li><a href="html-ejerc4-enfasis.html">Ejercicio 4</a></li>
-        <li><a href="html-ejerc5-utf-8.html">Ejercicio 5</a></li>
-        <li><a href="html-ejerc6-listas.html">Ejercicio 6</a></li>
-        <li><a href="html-ejerc7-viaje.html"> Ejercicio 7</a></li>
+        <h1 >Enlace a todas las secciones de mi página</h1>
+        <ol id="dicontinua">
+            <li><a class="boton" href="#primera">Mi biografia</a></li>
+            <li><a class="boton" href="#segunda">Ejercicios introducción HTML</a></li>
+            <li><a class="boton" href="#tercera">Ejercicios introducción CSS</a></li>
+            <li><a class="boton" href="#cuarta">Ejercicios de más etiquetas</a></li>
+            <li><a class="boton" href="#quinta">Web hosting</a></li>
+        </ol>
+        <h2 id="primera">Mi biografia</h2>
+        <p>Me llamo Ángela Martínez y tengo 17 años. Vivo en Oviedo y actualmente estoy cursando segundo de bachiller en el IES Dr. Fleming. El deporte junto a la música y el cine son unas de mis aficiones favoritas, pero lo que verdaderamente me encanta es viajar. Me encantría por ir a todos los paises del mundo. Ojalá poder cumplirlo algún día. Respecto a la música mis cantastes favoritos son Ariana Grande , Lana del Rey , Shawn Mendes... y respecto al cine no tengo ninguna preferencia.</p>
+        <h2 id="segunda">Ejercicios introducción HTML</h2>
+        <ul>
+            <li><a href="html-ejerc1-intro.html">Ejercicio 1 </a></li>
+            <li><a href="html-ejerc2-poema.html">Ejercicio 2</a></li>
+            <li><a href="html-ejerc3-enfasis.html">Ejercicio 3</a></li>
+            <li><a href="html-ejerc4-enfasis.html">Ejercicio 4</a></li>
+            <li><a href="html-ejerc5-utf-8.html">Ejercicio 5</a></li>
+            <li><a href="html-ejerc6-listas.html">Ejercicio 6</a></li>
+            <li><a href="html-ejerc7-viaje.html"> Ejercicio 7</a></li>
+        </ul>
+        <h2  id="tercera">Ejercicios introducción CSS</h2>
+        <ul>
+         <li><a href="html-ejerc8-color.html">Ejercicio 8</a></li>
+         <li><a href="html-ejerc9-criatura.html">Ejercicio 9</a></li>
+         <li><a href="html-ejerc10-criatura2.html">Ejercicio 10</a></li>
+         <li><a href="html-ejerc11-formato.html">Ejercicio 11</a></li>
+         <li><a href="html-ejerc12-Olafs.html">Ejercicio 12</a></li>
+         <li><a href="html-ejerc13-clases.html">Ejercicio 13</a></li>
+         <li><a href="html-ejerc14-desafio-clases.html">Ejercicio 14</a></li>
+         <li><a href="html-ejerc15-selectores.html">Ejercicio 15</a></li>
+         <li><a href="html-ejer16.html ">Ejercicio 16</a></li>
          </ul>
-         <h2> Ejercicios introducción CSS</h2>
-         <ul>
-        <li><a href="html-ejerc8-color.html">Ejercico 8</a></li>
-        <li><a href="html-ejerc9-criatura.html">Ejercicio 9</a></li>
-        <li><a href="html-ejerc10-criatura2.html">Ejercicio 10</a></li>
-        <li><a href="html-ejerc11-formato.html">Ejercicio 11</a></li>
-        <li><a href="html-ejerc12-Olafs.html">Ejercicio 12</a></li>
-        <li><a href="html-ejerc13-clases.html">Ejercicio 13</a></li>
-        <li><a href="html-ejerc14-desafio-clases.html">Ejercicio 14</a></li>
-        <li><a href="html-ejerc15-selectores.html">Ejercicio 15</a></li>
-        <li><a href="html-ejer16.html ">Ejercicio 16</a></li>
-     </ul>
-    </div>
-    </body>
-</html>
+
+        <h2 id="cuarta">Ejercicios de más etiquetas</h2>
+        <ul>
+        <li><a href="html-ejer17.html">Ejercicio 17</a></li>
+        <li><a href="html-ejerc18-vinculos.html">Ejercicio 18</a></li>
+        <li><a href="html-ejerc19-vinculos_internos.html">Ejercicio 19</a></li>
+        <li><a href="html-ejerc20-tabla.html">Ejercicio 20</a></li>
+        <li><a href="html-ejerc21-proeycto_recetas.html">Ejercicio 21</a></li>
+       </ul>
+       <h2 id="quinta">Web hosting </h2>
+       <p>El hosting es un servicio en línea con el cual se puede publicar un sitio o aplicación web en Internet. 
+        Para ello se necesita un servidor , que es un ordenador que está funcionando constantemente para que los usuarios pudan disponer de la inforción que se publique cuando quieran.</p>
+      
+       </body>
+       </html>
+        

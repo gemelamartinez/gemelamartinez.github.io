@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Responsivo_2</title>
+
+        <style>
+
+            #contenedor{
+         display: grid;
+                height: 500px;
+                width: 650px;
+                grid-template-rows: 100px 100px;
+                grid-template-columns: 150px 150px 150px;
+                border-style: solid;
+                border-radius: 4px;
+                border-color: black;
+                align-content: center;
+                justify-content: space-evenly;
+            }
+
+            #a1{
+                background-color: rgb(81, 206, 255);
+                border-style: solid;
+                border-radius: 4px;
+                border-color: rgb(23, 117, 148);
+                grid-row: 1/3;
+             grid-column: 3;              
+            }
+
+            #a2{
+                background-color: rgb(255, 129, 150);
+                border-style: solid;
+                border-radius: 4px;
+                border-color:rgb(255, 0, 128);
+                grid-row: 1;
+                grid-column: 1/3;
+                margin-bottom: 3px;
+            }
+
+            #a3{
+                background-color: rgb(45, 212, 45);
+                border-style: solid;
+                border-radius: 4px;
+                border-color: rgb(0, 107, 0);
+                grid-row: 2;
+                grid-column: 1;
+            }
+
+          #a4{background-color: rgb(255, 252, 92);
+                border-style: solid;
+                border-radius: 4px;
+                border-color: rgb(253, 253, 0);
+                grid-row: 2;
+                grid-column: 2;
+            }
+
+            p{margin-top: 5px;
+                margin-left: 5px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+
+        </style>
+    </head>
+    
+	<body>
+        <div id="contenedor">
+
+            <section id="a1">
+                <p>
+                    grid-row: 1/3; <br>
+                    <br>
+                    
+                    grid-column: 3;
+                </p>
+            </section>
+
+            <section id="a2">
+                <p>
+                    grid-row: 1;<br>
+                    
+                    <br>
+                    grid-column: 1 / 3;
+                </p>
+            </section>
+
+            <section id="a3">
+                <p>
+                    grid-row: 2;<br>
+                    <br>
+                    <br>
+                    grid-column: 1;
+                </p>
+            </section>
+
+            <section id="a4">
+                <p>
+                    grid-row: 2;<br>
+                    
+                    <br>
+                    grid-column: 2;
+                </p>
+            </section>
+
+        </div>
+        
+    </body>
+
+</html>

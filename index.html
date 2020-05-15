@@ -1,313 +1,233 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
     <head>
-        <title>TIC</title>
         <meta charset="utf-8">
-        
-        
+        <title>index</title>
     </head>
-
         <style>
-          *{list-style: none;
-            text-decoration: none;
-            color:rgb(255, 105, 45);
-            
-            
-
-          }
-      
-
-             body {
-             font-family:"Zapf-Chancery";
-             color:rgb(255, 128, 78);
-             line-height:1.6 rem ;
-             font-size: 1.4em;
-             margin: 0;
-             
-             background: url(https://images7.alphacoders.com/104/1045635.jpg) no-repeat center center fixed;
-             -webkit-background-size: cover;
-             -moz-background-size: cover;
-             -o-background-size: cover;
-               background-size: cover
-             
-            
-             
-             }
-
-             h2{
-               line-height: 1.3 em;
-               font-size: 2rem;
-               color: rgb(255, 2, 86);
-               animation-duration: 3s;
-               animation-name: slidein;
-               
- 
-               
-               
-             }
-
-             @keyframes slidein{
-               from{
-                 margin-left: 100%;
-                 width: 300%;
-               }
-               to {
-                 margin-left: 0%;
-                 width: 100%;
-               }
-             }
-
-              p {
-                  margin-bottom: 1.6em;
-                color:rgb(229, 175, 155);
-                
-    
-                
-              }
-
-            
-
-              .container {
-                width: 85%;
-                max-width: 850px;
-                margin: 0 auto;
+            *{list-style: none;
                 text-decoration: none;
-                background-color: rgba(55, 120, 146, 0.644);
-               padding-left: 1rem;
-               padding-right: 1rem;
+                
+            }
+            body{font-size:  1.4em;
+                line-height:1.6rem ;
+               
+               
+               }
 
+            :root{
+                font-family:"Zapf-Chancery";
+                --color_oscuro:rgba(55, 120, 146, 0.945);
+                --color_oscuro_transparente:rgba(55, 120, 146, 0.904);
+                --blanco: #fff;
+                --pink: rgb(245, 140, 201);
+                font-size: 90%/1.3 ;
+            }
+            #PosicionamientoGrid{
+                display: grid;
+                grid-gap: 5px;
+                grid-template-rows: 1fr 9fr;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-areas:
+                "header header"
+                "nav content"
+                "nav footer"
+                ;
+            }
+            #header{
+                background-color: var(--color_oscuro_transparente);
+                color:var(--pink); ;
+                grid-area: header;
+                text-align: center;
+                letter-spacing: 15px;
+            
+               
+            }
+            #nav{ grid-area: nav;
+                color:var(--pink);
+                background:var(--color_oscuro_transparente);
+                line-height:2rem ;
                
                 
-                
-
-
-                ;
-
-              }
-
-              .header {
-                background-color: rgb(55, 120, 146);
-                
-                padding: 2rem 0;
-
-                position: fixed;
-                left:0;
-                top:0;
-                width: 100%;
-
-              }
-              .header a {
-                  color: rgb(229, 175, 155);
-                  text-decoration: none;
-              }
-
-              .logo-nav-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-                
-              }
-              .navigation ol {
-                margin:0;
-                padding: 0;
-                list-style: none;
-                color: rgb(229, 175, 155);
-              }
-              .navigation  ol li {
-                display: inline-block;
-              }
-              .navigation ol li a{
-                display : block;
+           
+               
+            }
+            #nav li a{
+               color: rgb(226, 192, 204);
+              padding:1rem;
+              display : block;
                 padding: 0.5rem 1rem;
                 transition: all 0.4s linear;
                 border-radius: 5px;
-                
-              }
               
-              .navigation ol li :hover {
-                  color: rgb(252, 249, 246);
-                  background-color: rgb(255, 128, 78);
-
-              }
-             
-              .logo {
-                letter-spacing: 15px;
-                font-size:1.2em;
-                margin:0;
-                position: absolute;
-top: 40px; left: 40px;
-              }
-              .footer{
-                background-color: rgb(125, 94, 138);
-                padding: 4rem 0;
+              
+           
+                
+            }
+            #nav li a:hover{
+                background-color: var(--blanco);
+                color:  rgb(255, 2, 86);
+                padding: 0.5rem 1rem;
+                transition: all 0.4s linear;
+                border-radius: 5px;
+               
+                
+            }
+            #content li a{
+                background-color: var(--pink);
+                color:var(--blanco);
+              
+                padding: 0.5rem 1rem;
+                transition: all 0.4s linear;
+                border-radius: 5px;
+               
+            }
+            #content li a:hover{
+                background-color: var(--blanco);
+                color:var(--color_oscuro);
+            }
+            #content{
+                grid-area: content;
+                background-color: var(--color_oscuro_transparente);
                 text-align: center;
-                margin-top: 6rem;
-                
-                
-                
-                
-              }
-              
-              .main {
-                padding-top: 12rem;
-                margin-left: 5rem ;
-                
-             
-
-              }
-              #columnas p {
-               margin-bottom: 2px;
-             margin-bottom: 2rem;
-            text-align: justify;
-             margin-left: 5rem;
-   
-              }
-
-              #columnas {
-                border:2px dashed rgb(241, 104, 12);
-                padding:2em;
-                display: inline-block;
-                column-count: 2;
-                padding-left: 5px;
-                background-color:rgba(55, 120, 146, 0.719);
-
-              }
-              a:active{
-                color: rgb(241, 12, 153);
-              }
-
-
-             
-             
-              
-
-              
-              
-
-            </style>
-    </head>
-
-    <body >
-      <header class="header">
-        <div class="container logo-nav-container">
-          <p class="logo">TICII </p>
-          <nav class="navigation">
-          <ol  >
-            <li><a class="boton" href="#primera">Mi biografia </a></li>
-            <li><a class="boton" href="#segunda">Ejercicios introducción HTML</a> </li>
-            <li><a class="boton" href="#tercera">Ejercicios introducción CSS</a></li>
-            <li><a class="boton" href="#cuarta">Ejercicios de más etiquetas</a></li>
-            <li><a class="boton" href="#quinta">Web hosting</a></li>
-            <li><a class="boton" href="#sexta">Web semántica</a></li>
-          </ol>
-          </nav>
-          </div>
-        </header>
-        <h2 class=main>Plantilla nuevo index Github</h2>
-
-
-        <div id="columnas">
-          
-            <p>
-                Con esta plantilla se<br>
-                 pretende dar una<br>
-                 referencia para la mejora <br>
-                  de los index html que el<br>
-                   alumnado de TICII del<br>
-                instituto IES.Fleming<br>
-                 esta realizando<br>
-                  para la evalucación<br>
-                   del curso 2019-2020.
-                </p>
+            }
             
-        </div>
+            #footer{
+                grid-area: footer;
+                background-image: url("heroimage.jpg");
+                background-color: #cccccc;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: var(--color_oscuro_transparente);
+            }
+            #footer p{
+              
+                  margin-bottom: 1.6em;
+                color:rgb(226, 192, 204);
+                padding: 0.5rem 1rem;
+                
+    
+                
+              }   
+              p{color:rgb(226, 192, 204);
+                padding: 0.5rem 1rem;}
+            
+            @media (max-width: 702px){
+                #PosicionamientoGrid{
+                display: grid;
+                grid-gap: 5px;
+                grid-template-columns: 100%;
+                grid-template-rows: 2fr 2fr 10fr 5fr;
+                grid-template-areas:
+                "header"
+                "nav"
+                "content"
+                "footer"
+                ;
+                }
+            }
+            h2{
+                line-height: 1.3 em;
+               font-size: 2rem;
+               color: rgb(255, 105, 45);
+               padding: 0.5rem 1rem;
+               text-align: center;
+              }
 
-        <section>
-          <div class="container">
-          <h2 id="primera">Mi biografia</h2>
-          <p>Me llamo Ángela Martínez y tengo 17 años. Vivo en Oviedo y actualmente estoy cursando segundo de bachiller en el IES Dr. Fleming. El deporte junto a la música y el cine son unas de mis aficiones favoritas, pero lo que verdaderamente me encanta es viajar. Me encantría por ir a todos los paises del mundo. Ojalá poder cumplirlo algún día. Respecto a la música mis cantastes favoritos son Ariana Grande , Lana del Rey , Shawn Mendes... y respecto al cine no tengo ninguna preferencia.</p>
-        </div>
-      </section> 
-   
-        <section>
-          <div class="container">
-          <h2 id="segunda">Ejercicios introducción HTML</h2>
-          <ul>
-              <li><a href="html-ejerc1-intro.html">Ejercicio 1 </a></li><br>
-              <li><a href="html-ejerc2-poema.html">Ejercicio 2</a></li><br>
-              <li><a href="html-ejerc3-enfasis.html">Ejercicio 3</a></li><br>
-              <li><a href="html-ejerc4-enfasis.html">Ejercicio 4</a></li><br>
-              <li><a href="html-ejerc5-utf-8.html">Ejercicio 5</a></li><br>
-              <li><a href="html-ejerc6-listas.html">Ejercicio 6</a></li><br>
-              <li><a href="html-ejerc7-viaje.html"> Ejercicio 7</a></li><br>
-            </div>
-          </ul>
-        </section>
-   
-          <section >
-            <div class="container">
-          <h2  id="tercera">Ejercicios introducción CSS</h2>
-          <ul>
-           <li><a href="html-ejerc8-color.html">Ejercicio 8</a></li><br>
-           <li><a href="html-ejerc9-criatura.html">Ejercicio 9</a></li><br>
-           <li><a href="html-ejerc10-criatura2.html">Ejercicio 10</a></li><br>
-           <li><a href="html-ejerc11-formato.html">Ejercicio 11</a></li><br>
-           <li><a href="html-ejerc12-Olafs.html">Ejercicio 12</a></li><br>
-           <li><a href="html-ejerc13-clases.html">Ejercicio 13</a></li><br>
-           <li><a href="html-ejerc14-desafio-clases.html">Ejercicio 14</a></li><br>
-           <li><a href="html-ejerc15-selectores.html">Ejercicio 15</a></li><br>
-           <li><a href="html-ejer16.html ">Ejercicio 16</a></li><br>
-           </ul>
-          </div>
-       </section>
-   
-        <section > 
-          <div class="container">
-          <h2 id="cuarta">Ejercicios de más etiquetas</h2>
-          <ul>
-          <li><a href="html-ejer17.html">Ejercicio 17</a></li><br>
+            img{  display:block;
+          margin:auto;}
+            
+        </style>
+    </head>
+    <body>
+        <section id="PosicionamientoGrid">
+            <header id="header">
+                <h1>TIC2 en cuarentena</h1>
+            </header>
+            <nav id="nav">
+                <ul>
+                    <li><a href=#content>Mis trabajos TIC</a>
+                        <ul>
+                            <li><a href="#ejercicios-1">Introducción HTML</a></li>
+                            <li><a href="#ejercicios-2">Introducción CSS</a></li>
+                            <li><a href="#ejercicios-3">Ampliación HTML y CSS</a></li>
+                            <li><a href="#ejercicios-4">Web semántica y videos</a></li>
+                            <li><a href="#ejercicios-5">CSS Grid y Media Queries</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ultimoindex.html">Mi último index</a></li>
+                    <li><a href=#footer>Sobre mi</a></li>
+                </ul>
+            </nav>
+            <main id="content">
+                <section id="ejercicios-1">
+                    <h2>Introducción HTML</h2>
+                    <ul>
+                        <li><a href="html-ejerc1-intro.html">Ejercicio 1 </a></li><br>
+                        <li><a href="html-ejerc2-poema.html">Ejercicio 2</a></li><br>
+                        <li><a href="html-ejerc3-enfasis.html">Ejercicio 3</a></li><br>
+                        <li><a href="html-ejerc4-enfasis.html">Ejercicio 4</a></li><br>
+                        <li><a href="html-ejerc5-utf-8.html">Ejercicio 5</a></li><br>
+                        <li><a href="html-ejerc6-listas.html">Ejercicio 6</a></li><br>
+                        <li><a href="html-ejerc7-viaje.html"> Ejercicio 7</a></li><br>
+                    </ul> 
+                   </section>
+                <section id="ejercicios-2">
+                    <h2>Introducción CSS</h2> 
+                    <ul>
+                        <li><a href="html-ejerc8-color.html">Ejercicio 8</a></li><br>
+                        <li><a href="html-ejerc9-criatura.html">Ejercicio 9</a></li><br>
+                        <li><a href="html-ejerc10-criatura2.html">Ejercicio 10</a></li><br>
+                        <li><a href="html-ejerc11-formato.html">Ejercicio 11</a></li><br>
+                        <li><a href="html-ejerc12-Olafs.html">Ejercicio 12</a></li><br>
+                        <li><a href="html-ejerc13-clases.html">Ejercicio 13</a></li><br>
+                        <li><a href="html-ejerc14-desafio-clases.html">Ejercicio 14</a></li><br>
+                        <li><a href="html-ejerc15-selectores.html">Ejercicio 15</a></li><br>
+                        <li><a href="html-ejer16.html ">Ejercicio 16</a></li><br>
+                    </ul>              
+                </section>
+                <section id="ejercicios-3">
+                    <h2>Ampliación HTML y CSS</h2> 
+                    <ul>
+                        <li><a href="html-ejer17.html">Ejercicio 17</a></li><br>
           <li><a href="html-ejerc18-vinculos.html">Ejercicio 18</a></li><br>
           <li><a href="html-ejerc19-vinculos_internos.html">Ejercicio 19</a></li><br>
           <li><a href="html-ejerc20-tabla.html">Ejercicio 20</a></li><br>
           <li><a href="html-ejerc21-proeycto_recetas.html">Ejercicio 21</a></li><br>
-         </ul>
-        </div>
-       </section>
-   
-       <section>
-        <div class="container"> 
-         <h2 id="quinta">Web hosting </h2>
-         <p>El hosting es un servicio en línea con el cual se puede publicar un sitio o aplicación web en Internet. 
-          Para ello se necesita un servidor , que es un ordenador que está funcionando constantemente para que los usuarios pudan disponer de la inforción que se publique cuando quieran.</p>
-        </div>
-      </section>
-   
-       <section>
-        <div class="container">
-        <h2 id="sexta">Web semántica</h2>
-        <ul>
-            <li><a href="html-ejerc24-videos.html">Ejercicio 24</a></li>
-        </ul>
-       </section>
-
-      </div>
-    </main>
-    
-
-
-        <footer class="footer">
-          <div >
-            <p>Página diseñada por Ángela Martínez</p>
-          </div>
-          </footer>
-      
-        
-          </body>
-
-        
-        
-        
-
-       
-          
+                    </ul>               
+                </section>
+                <section id="ejercicios-4"> 
+                    <h2>Videos </h2> 
+                    <ul>
+                        <li><a href="html-ejerc24-videos.html">Ejercicio 24</a></li>
+                    </ul>
+                    <h2>Web semántica</h2>
+                        <p>El hosting es un servicio en línea con el cual se puede publicar un sitio o aplicación web en Internet. 
+                            Para ello se necesita un servidor , que es un ordenador que está funcionando constantemente para que los usuarios pudan disponer de la inforción que se publique cuando quieran.</p>
+                    </ul>
+                </section>
+                <section id=ejercicios-5>
+                    <h2>CSS Grid y Media Queries</h2>
+                    <ul>
+                      <li><a href="html-ejerc25-malla-google-fonts.html">Ejercicio 25</a></li><br> 
+                      <li><a href="html-ejerc26-malla.html">Ejercicio 26</a></li><br> 
+                      <li><a href="html-ejerc27-malla2.html">Ejercicio 27</a></li><br> 
+                      <li><a href="html-ejerc28-responsivo.html">Ejercicio 28</a></li><br> 
+                      <li><a href="html-ejerc29-responsivo_1.html">Ejercicio 29</a></li> <br>
+                      <li><a href="html-ejerc30-responsivo_2.html">Ejercicio 30</a></li> <br>
+                      <li><a href="html-ejerc31-responsivo_3.html">Ejercicio 31</a></li><br>
+                      <li><a href="html-ejerc32-media-querie.HTML">Ejercicio 32</a></li>  
+                  
+                    </ul>
+                </section>
+            </main>
+            <footer id="footer">
+              
+                <p>Me llamo Ángela Martínez y tengo 17 años. Vivo en Oviedo y actualmente estoy cursando segundo de bachiller en el IES Dr. Fleming. El deporte junto a la música y el cine son unas de mis aficiones favoritas, pero lo que verdaderamente me encanta es viajar. Me encantría por ir a todos los paises del mundo. Ojalá poder cumplirlo algún día. Respecto a la música mis cantastes favoritos son Ariana Grande , Lana del Rey , Shawn Mendes... y respecto al cine no tengo ninguna preferencia.</p>
+                <img src="fotos_tic_II/fleming.png" width="100">
+               
+            </footer>
+        </section>
+    </body>
+</html>

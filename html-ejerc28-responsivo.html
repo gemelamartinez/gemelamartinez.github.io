@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Responsivo</title>
+        <style>
+
+
+            header{
+                grid-area: header;
+                background-color: pink;
+                border-style: solid;
+                border-radius: 4px;
+                border-color: rgb(253, 62, 94);
+                
+                padding: 0.5rem;
+            }
+
+
+            aside{
+                grid-area: aside;
+                background-color: rgb(109, 233, 255);
+                border-style: solid;
+                border-radius: 4px;
+                border-color: rgb(0, 119, 255);
+                
+                padding: 0.5rem;
+            }
+
+            main{
+                grid-area: main;
+                background-color: rgb(76, 248, 76);
+                border-style: solid;
+                border-radius: 4px;
+                border-color: rgb(2, 78, 2);
+                
+                padding: 0.5rem;
+            }
+
+            footer{
+                grid-area: footer;
+                background-color: yellow;
+                border-style: solid;
+                border-radius: 4px;
+                border-color: rgb(187, 187, 0);
+               
+                padding: 0.5rem;
+            }
+
+            body{
+                width: 50%;
+                height: 50%;
+                display: grid;
+                grid-gap: 10px 20px;
+                grid-template-columns: 1fr 200px;
+                grid-template-rows: 100px 1fr auto;
+                grid-template-areas:
+                "header header"
+                "main aside"
+                "footer aside";
+                border-style: solid;
+                border-radius: 3px;
+                border-color: black;
+                padding: 0.5rem;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            }
+
+            @media (max-width: 600px) {
+                body{
+                    display: grid;
+                    grid-gap: 0;
+                    grid-template-rows: auto 1fr auto auto;
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                    "header"
+                    "main"
+                    "aside"
+                    "footer";
+                }
+            }
+        </style>
+
+    </head>
+    
+	<body>
+
+        <header>
+           <p> header </p> 
+        </header>
+
+        <aside>
+           <p> aside </p> 
+        </aside>
+        
+        <main>
+           <p>content</p> 
+
+            <section>
+
+             <h1>Px</h1>
+                <p>Pixeles</p>
+
+            <h1>Fr</h1>
+                <p>Fracciones del espacio disponible.</p>
+
+            <h1>Em</h1>
+                <p>Unidades que son  múltiplo del tamaño de fuente del elemento.</p>
+
+            <h1>Vw</h1>
+                <p>Medida relativa de acuerdo al viewport. Hace referencia a la centésima parte del ancho del viewport.</p>
+                
+            <h1>Vh</h1>
+                <p>Vh hace referencia a la centésima parte de la altura del viewport.</p>
+                
+            <h1>%</h1>
+                <p>% de las dimensiones del elemento padre.</p>
+                
+            <h1>Auto</h1>
+                <p>Medida que viene determinada por el navegador</p>
+
+            </section>
+
+
+        </main>
+        
+        <footer>
+            footer
+        </footer>
+	</body>
+</html>

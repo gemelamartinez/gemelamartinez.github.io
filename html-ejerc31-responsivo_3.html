@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Responsivo_3</title>
+        <style>
+            #contenedor{
+                display: grid;
+                grid-template-rows: 200px 200px;
+                grid-template-columns: 400px 400px;
+                border-style: solid;
+                border-radius: 4px;
+                border-color: black;
+                height: 400px;
+         width: 800px
+            }
+
+            #a2{ background-color: rgb(253, 175, 188);
+                border-style: solid;
+                border-radius: 4px;
+                border-color: rgb(250, 134, 153);
+                align-self: stretch;
+                justify-self: stretch;          
+            }
+
+            #a1{
+                background-color: rgb(95, 229, 247);
+                border-style: solid;
+                border-radius: 4px;
+              border-color: rgb(16, 107, 138);
+                align-self: end;
+                justify-self: start;
+                
+            }
+
+         #a3{
+             background-color: rgb(102, 224, 102);
+                border-style: solid;
+                border-radius: 4px;
+                border-color: rgb(12, 83, 12);
+                grid-column: span 2;
+                align-self: center;
+         justify-self: center;
+            }
+
+            p{
+          margin-top: 5px;
+                margin-left: 5px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            
+        </style>
+
+    </head>
+    
+	<body>
+
+        <div id="contenedor">
+
+            <section id="a2">
+                <p>
+                    align-self: stretch;<br>
+                    
+                    <br>
+                    justify-self: stretch;
+                </p>
+
+            </section>
+
+            <section id="a1">
+                <p>
+                    align-self: end;<br>
+                   
+                    <br>
+                    justify-self: start;
+                </p>
+            </section>
+
+            <section id="a3">
+                <p>
+                    grid-column: span 2; <br>
+                    
+                    <br>
+                    align-self: center; <br>
+                   
+                    <br>
+                    justify-self: center;
+                </p>
+            </section>
+
+        </div>
+
+    </body>
+</html>
